@@ -14,8 +14,8 @@ func QueryHandler(w http.ResponseWriter, r *http.Request) {
 	
 	w.WriteHeader(http.StatusOK)
 
-	fmt.Fprintf(w, "Category is: %s\n", queries["category"])
-	fmt.Fprintf(w, "ID is: %s\n", queries["id"])
+	fmt.Fprintf(w, "Category is: %s\n", queries["category"][0])
+	fmt.Fprintf(w, "ID is: %s\n", queries["id"][0])
 }
 
 func main() {
